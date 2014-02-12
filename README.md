@@ -15,7 +15,7 @@ This module overwrites the Backbokne.sync method to use the node-soap module to 
 
 Example using the public Oracle CRM (Fusion Application) wsdl for a Sales Account
 
-```
+```javascript
 var Backbone = require('backbone');
 require('node-soap-backbone')(Backbone); // Pass in your Backbone here to apply the sync overwrite
 var Models = exports.Models = {};
@@ -50,7 +50,7 @@ Collections.SalesAccounts = Backbone.Collection.extend({
 
 After model/s and collection/s are defined, use them as normal backbone models e.g.
 
-```
+```javascript
 var collection = new Collections.SalesAccounts();
 collection.fetch({
   success: function() {
@@ -64,7 +64,7 @@ collection.fetch({
 
 If you wish to filter out parts of the response that get populated into the model, overwrite the 'parse' method in the model e.g.
 
-```
+```javascript
 Models.SalesAccount = Backbone.Model.extend({
   parse: function(json) {
     for(var key in json) {
