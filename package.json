@@ -1,0 +1,30 @@
+{
+  "name": "node-soap-backbone",
+  "version": "0.0.1",
+  "description": "Backbone sync overwrite for fetching models using https://github.com/milewise/node-soap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/david-martin/node-soap-backbone.git"
+  },
+  "keywords": [
+    "node",
+    "soap",
+    "backbone"
+  ],
+  "author": "david.martin@feedhenry.com",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "131576ec28b8136ce4249f77a6eb32dfddb1a3c9",
+  "bugs": {
+    "url": "https://github.com/david-martin/node-soap-backbone/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.10",
+    "backbone": "~1.1.0",
+    "soap": "git://github.com/fheng/node-soap.git#master"
+  }
+}
