@@ -17,8 +17,7 @@ Backbone.sync = function( method, model, options ) {
           if (err) return cb(err);
           model.client = client;
           model.client.setSecurity(new soap.WSSecurity(model.soapUser, model.soapPass));
-          var desc = model.client.describe();
-          process.env.DEBUG && console.log('soap client', desc);
+          process.env.DEBUG && console.log('soap client', model.client.describe());
           return cb(null, model.client);
         });
       }
