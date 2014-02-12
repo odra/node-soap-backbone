@@ -17,7 +17,7 @@ Example using the public Oracle CRM (Fusion Application) wsdl for a Sales Accoun
 
 ```
 var Backbone = require('backbone');
-require('node-soap-backbone'); // simply requiring the module is enought to overwrite backbone sync
+require('node-soap-backbone')(Backbone); // Pass in your Backbone here to apply the sync overwrite
 var Models = exports.Models = {};
 var Collections = exports.Collections = {};
 

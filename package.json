@@ -1,6 +1,6 @@
 {
   "name": "node-soap-backbone",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Backbone sync overwrite for fetching models using https://github.com/milewise/node-soap",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "async": "~0.2.10",
-    "backbone": "~1.1.0",
     "soap": "git://github.com/fheng/node-soap.git#master"
   }
 }
