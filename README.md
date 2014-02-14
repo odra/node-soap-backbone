@@ -1,5 +1,4 @@
-node-soap-backbone
-==================
+# node-soap-backbone [![NPM version](https://badge.fury.io/js/node-soap-backbone.png)](http://badge.fury.io/js/node-soap-backbone)
 
 # Overview
 
